@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Inter:wght@100;400&display=swap");
+
+:root {
+  --color-btn: rgb(64, 64, 248);
+  --color-white: rgb(255, 255, 255);
+  --color-gray: rgb(116, 107, 107);
+  --color-shadow: rgba(116, 107, 107, 0.582);
+  --color-hr: rgba(202, 194, 194, 0.582);
+  --color-black: rgb(46, 43, 43);
+  --color-bar: rgb(99, 99, 247);
+}
+html,
+body,
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--color-btn);
+  font-weight: bold;
+  position: absolute;
+  padding: 0.15rem;
+  top: 100%;
+}
+.bar,
+.bar-2,
+.bar-3 {
+  width: 100%;
+  height: 0.4rem;
+  border-radius: 5rem;
+  background-color: var(--color-hr);
+  margin-top: 1rem;
+  position: relative;
+}
+.bar::before,
+.bar-2::before,
+.bar-3::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+  background-color: var(--color-bar);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bar-2::before {
+  width: 70%;
+}
+.bar-3::before {
+  width: 20%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  color: var(--color-black);
+}
+.body-container {
+  padding: 0 2rem;
+}
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 2rem;
+}
+.buttons-container .button {
+  cursor: pointer;
+  text-align: center;
+  flex-grow: 0;
+  font-size: 0.9rem;
+  height: 2rem;
+  transition: 1s ease;
+}
+.buttons-container p {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.button:hover::before {
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--color-btn);
+  font-weight: bold;
+  position: absolute;
+  padding: 0.15rem;
+  top: 100%;
+}
+.buttons-container .filter-btn {
+  border: thin solid var(--color-gray);
+  color: var(--color-gray);
+  font-weight: 600;
+  border-radius: 5rem;
+  background-color: transparent;
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.5s ease;
+}
+.buttons-container .filter-btn:hover {
+  background-color: var(--color-btn);
+  color: var(--color-white);
+  border: thin solid transparent;
+}
+.card {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 1.1rem;
+  box-shadow: 1px 1px 7px 2px var(--color-shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: 0.5s ease;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 7px 5px var(--color-shadow);
+}
+.card h4 {
+  margin-top: 0.3rem;
+}
+.card .small {
+  display: inline-flex;
+  width: auto;
+  justify-content: flex-start;
+}
+.card .small small {
+  margin-right: 1rem;
+}
+.card small ion-icon {
+  margin-right: 0.1rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem 1rem;
+}
+.header-container button {
+  background-color: var(--color-btn);
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 12rem;
+  font-weight: 500;
+  transition: 1s;
+}
+.header-container button:hover {
+  transform: scale(1.1);
+}
+.header-container ion-icon {
+  font-size: 1.5rem;
+}
+hr {
+  width: 100%;
+  border: 0.1px solid var(--color-hr);
+}
+.main {
+  flex-grow: 1;
+}
+.sidebar {
+  flex-basis: 30vw;
+  min-height: 100vh;
+  background-color: var(--color-black);
+}

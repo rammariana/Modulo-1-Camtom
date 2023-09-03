@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Camtom</title>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar"></nav>
+    <!-- Body -->
+    <main class="main">
+      <section class="header-container">
+        <div class="text">
+          <h1>Información de la empresa</h1>
+          <h4>GlobalGoods SAB de CV</h4>
+          <h4>RFC: SACC1J16"</h4>
+          <small>Datos del responsable:</small>
+          <h4>Luis Chávez</h4>
+          <h4>Director de Operaciones</h4>
+        </div>
+        <button>
+          <ion-icon name="add"></ion-icon>
+          Agregar <br />nueva operación
+        </button>
+      </section>
+      <hr />
+      <div class="buttons-container">
+        <p class="button active">Operaciones actuales</p>
+        <p class="button">Operaciones próximas</p>
+        <p class="button">Operaciones anteriores</p>
+        <button class="filter-btn">
+          Filtrar <ion-icon name="funnel"></ion-icon>
+        </button>
+      </div>
+      <hr />
+      <!-- Section body-->
+      <section class="body-container">
+        <!-- Cards-->
+        <div class="card">
+          <div class="small">
+            <small
+              ><ion-icon name="return-left"></ion-icon><b>Importación</b></small
+            >
+          </div>
+          <h4>Luces direccionales y/o calaveras traseras - 85121002</h4>
+          <p>
+            Desde Puerto de Shanghai Yanshan en China 🇨🇳 a Puerto de Manzanillo
+            en México 🇲🇽
+          </p>
+          <p>CIF - Cost Insurance and Freight</p>
+          <small><i>Estado: Programado 10 de Agosto 2023</i></small>
+          <div class="bar"></div>
+        </div>
+        <div class="card">
+          <div class="small">
+            <small>
+              <ion-icon name="return-right"></ion-icon><b>Exportación</b>
+            </small>
+          </div>
+          <h4>Café tostado descafeinado - 090121002</h4>
+          <p>
+            Desde Puerto Santos en Sao Paulo 🇧🇷 a Puerto de Veracruz en Veracruz
+            México en México 🇲🇽
+          </p>
+          <p>CIF - Cost Insurance and Freight</p>
+          <small><i>Estado: Programado 1 de Septiembre 2023</i></small>
+          <div class="bar-2"></div>
+        </div>
+        <div class="card">
+          <div class="small">
+            <small>
+              <ion-icon name="return-right"></ion-icon><b>Exportación</b>
+            </small>
+            <small> <ion-icon name="cube"></ion-icon>Carga consolidada </small>
+          </div>
+          <h4>Aguacate - 01234567</h4>
+          <h4>Jitomate - 76543210</h4>
+          <p>
+            Desde Puerto de Shanghai Yanshan en China 🇨🇳 a Puerto de Manzanillo
+            en México 🇲🇽
+          </p>
+          <p>CIF - Cost Insurance and Freight</p>
+          <small><i>Estado: Programado 10 de Agosto 2023</i></small>
+          <div class="bar-3"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  </body>
+</html>
